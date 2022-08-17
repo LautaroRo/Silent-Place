@@ -9,9 +9,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-$estilos: (
-    blanco:white,
-);
+
 
 
 html{
@@ -75,8 +73,8 @@ html{
 
 .botonformulario{
     background-color: black;
-    color: map-get($estilos, blanco);
-    border-color: map-get($estilos, blanco);
+    color: map-get($estilos,"blanco");
+    border-color: map-get($estilos,"blanco");
     width: 100px;
     margin: 10px;
 }
@@ -84,7 +82,7 @@ html{
 .inputinicio{
     height: 30px;
     background-color:black ;
-    color: map-get($estilos, blanco);
+    color: map-get($estilos,"blanco");
 }
 
 main .container{
@@ -137,7 +135,7 @@ main .container{
 }
 
 .footer{
-    background-color:black ;
+    background-color: #212529;
     color: orangered;
     padding: 20px 20px;
     background-size: cover;
@@ -167,7 +165,7 @@ main .container{
         display: block;
         padding: 0 10px;
         background-color: black;
-        color: map-get($estilos, blanco);
+        color: map-get($estilos,"blanco");
         line-height: 50px;
         font-size: 18px;
         box-shadow: $sombra2;
@@ -255,15 +253,15 @@ main .container{
 
 .btn-outline-success{
     background-color: black;
-    color:  map-get($estilos, blanco);
-    border-color: map-get($estilos, blanco);
+    color:  map-get($estilos,"blanco");
+    border-color: map-get($estilos,"blanco");
 }
 
 
 
 .btn-outline-success:hover{
     color: black;
-    background-color: map-get($estilos, blanco);
+    background-color: map-get($estilos,"blanco");
 }
 
 
@@ -287,7 +285,7 @@ main .container{
 
 .textopage{
     font-size: $tamañodeletra25px;
-    color: black;
+    color: red;
     font-family: $tipografia2;
     padding: 10px;
 }
@@ -319,16 +317,35 @@ main .container{
 .historia1{
     font-family: $tipografia2;
     margin: 20px;
-    border: 3px black groove;
     padding: 10px;
-    color: black;
-    font-size: $tamañodeletra25px;
+    font-size: $tamañodeletra20px;
+    color: white;
+    border: 3px grey groove;
+}
+
+
+/*--containerpages--*/
+.pages{
+    background-color: black;
+}
+
+/*--logopages--*/
+
+.logohistorias{
+    color: red;
+    margin: 50px;
+    font-size: 40px;
 }
 
 
 
+/*--bodypages--*/
 
-
+.iniciopages{
+    background-color: black;
+    font-family: $tipografia;
+    font-size: $tamañodeletra20px;
+}
 
 
 
