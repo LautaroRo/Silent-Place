@@ -62,12 +62,13 @@ html{
 
 .tituloformulario{
     padding: 10px;
+    color: red;
 }
 
 .formularioinicio{
     font-size: 27px;
     height: 100px;
-    color: black;
+    color: white ;
     padding: 10px;
 }
 
@@ -119,7 +120,7 @@ main .container{
 @mixin boton-size ($alto, $ancho){
     height: $alto;
     width: $ancho;
-}
+}   
 
 .boton{
     background-color: black;
@@ -228,8 +229,6 @@ main .container{
     justify-content: space-between;
     
 }
-
-
 
 
 
@@ -348,8 +347,68 @@ main .container{
 }
 
 
+/*--botonclientepgaes--*/
+
+.botonclientepages{
+    @extend .botonformulario;
+    
+}
+
+.botonpages{
+    display: flex ;
+    justify-content: center;
+}
 
 
+
+/*--cliente--*/
+
+.cliente{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    
+}
+
+.textarea{
+    background-color: grey;
+    font-family: $tipografia2;
+    resize: none;
+}    
+
+.textarea:hover{
+    background-color: white;
+    color: black
+
+}
+
+.iniciocliente{
+    @extend .iniciopages;
+}
+
+
+.textocliente{
+    display: flex;
+    justify-content: center;
+    color: red;
+    
+    
+}
+
+.containercliente{
+    padding: 150px;
+}
+
+.botontextarea{
+    @extend .botonformulario;
+}
+
+
+.logocliente{
+    @extend .logo
+}
 /*--index--*/
 @media only screen and (max-width: 768px){
 
@@ -531,5 +590,57 @@ main .container{
 
     .fomrularioinicio{
         height: 300px;
+    }
+}
+
+@media only screen and (max-width: 521px){
+    .navbar{
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .textarea{
+        height: 200px;
+        width: 200px;
+        position: relative;
+        left: -50px;
+    }
+
+    .botontextarea{
+        position: relative;
+        left: -50px;
+    }
+
+}
+
+@media only screen and (max-width: 330px){
+    .navbar{
+        height: 500px;
+    }
+
+    .formularioinicio{
+        height: 500px;
+    }
+
+}
+
+
+@media only screen and (min-width: 522px) and (max-width: 769px){
+    .navbar{
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 447px){
+    .textarea{
+        width: 200px;
     }
 }

@@ -12,7 +12,7 @@ html {
   font-family: "Playfair Display", serif;
   font-size: 20px; }
 
-.logo {
+.logo, .logocliente {
   color: red;
   font-size: 3em; }
 
@@ -42,15 +42,16 @@ html {
   font-family: "Roboto", sans-serif; }
 
 .tituloformulario {
-  padding: 10px; }
+  padding: 10px;
+  color: red; }
 
 .formularioinicio {
   font-size: 27px;
   height: 100px;
-  color: black;
+  color: white;
   padding: 10px; }
 
-.botonformulario {
+.botonformulario, .botonclientepages, .botontextarea {
   background-color: black;
   color: white;
   border-color: white;
@@ -235,10 +236,40 @@ main .container {
   font-size: 40px; }
 
 /*--bodypages--*/
-.iniciopages {
+.iniciopages, .iniciocliente {
   background-color: black;
   font-family: "Playfair Display", serif;
   font-size: 20px; }
+
+/*--botonclientepgaes--*/
+.botonpages {
+  display: flex;
+  justify-content: center; }
+
+/*--cliente--*/
+.cliente {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px; }
+
+.textarea {
+  background-color: grey;
+  font-family: "Roboto", sans-serif;
+  resize: none; }
+
+.textarea:hover {
+  background-color: white;
+  color: black; }
+
+.textocliente {
+  display: flex;
+  justify-content: center;
+  color: red; }
+
+.containercliente {
+  padding: 150px; }
 
 /*--index--*/
 @media only screen and (max-width: 768px) {
@@ -310,7 +341,7 @@ main .container {
     flex-direction: column; }
   .boton {
     width: 300px; }
-  .logo {
+  .logo, .logocliente {
     font-size: 2em; } }
 
 @media only screen and (min-width: 362px) and (max-width: 478px) {
@@ -342,3 +373,31 @@ main .container {
     height: 400px; }
   .fomrularioinicio {
     height: 300px; } }
+
+@media only screen and (max-width: 521px) {
+  .navbar {
+    height: 400px; } }
+
+@media only screen and (max-width: 400px) {
+  .textarea {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: -50px; }
+  .botontextarea {
+    position: relative;
+    left: -50px; } }
+
+@media only screen and (max-width: 330px) {
+  .navbar {
+    height: 500px; }
+  .formularioinicio {
+    height: 500px; } }
+
+@media only screen and (min-width: 522px) and (max-width: 769px) {
+  .navbar {
+    height: 400px; } }
+
+@media only screen and (min-width: 401px) and (max-width: 447px) {
+  .textarea {
+    width: 200px; } }
