@@ -68,6 +68,9 @@ main .container {
   justify-content: center;
   align-items: center; }
 
+.textopaginas {
+  color: black; }
+
 .paginasilent {
   width: 100%;
   margin: 10px;
@@ -270,7 +273,6 @@ main .container {
 .containercliente {
   padding: 150px; }
 
-/*--index--*/
 @media only screen and (max-width: 768px) {
   .textoinicio {
     height: 300px;
@@ -315,6 +317,17 @@ main .container {
 @media only screen and (min-width: 1101px) and (max-width: 1828px) {
   .textoinicio {
     height: 150px; } }
+
+@media only screen and (max-width: 507px) {
+  .fotosinicio {
+    height: 200px;
+    width: 200px; }
+  .textoinicio {
+    height: 800px; }
+  .boton {
+    width: 100px; }
+  .flex {
+    height: 1500px; } }
 
 /*--pages--*/
 @media only screen and (max-width: 768px) {
@@ -404,3 +417,8 @@ main .container {
 @media only screen and (min-width: 401px) and (max-width: 447px) {
   .textarea {
     width: 200px; } }
+
+@media only screen and (min-width: 300px) and (max-width: 356px) {
+  .textarea {
+    position: relative;
+    left: -70px; } }
